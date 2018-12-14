@@ -9,17 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
-    
-    
-    
-    
     var flipCount = 0{
         didSet{
             flipCountLabel.text = "Flips:\(flipCount)"
         }
     }
     @IBOutlet var buttonsCollection: [UIButton]!
-    var emojiAry = ["🐶","👻","🤡","👹","🐶","👻","🤡","👹"]
     lazy var game = Concentration(numberOfPairsOfCards: (buttonsCollection.count+1)/2)
 
     
@@ -52,9 +47,15 @@ class ViewController: UIViewController {
             }
         }
     }
-    
+    var emojiAry = ["🐶","👻","🤡","👹","🐶","👻","🤡","👹"]
+    var emojiDictionary = [Int:String]()
     func emoji(for card : Card)-> String {
-        return "?"
+        if emojiDictionary[card.identifier] == nil, emojiAry.count > 0 {
+            let randomIndex = Int(arc4random_uniform(UInt32(emojiAry.count)))
+            emojiDictionary[card.identifier] = emojiAry.remove(at: randomIndex)
+        }
+        
+        return emojiDictionary[card.identifier] ?? "?"
     }
     
 }
