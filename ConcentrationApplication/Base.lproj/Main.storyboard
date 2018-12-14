@@ -23,7 +23,7 @@
                                 <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <connections>
-                                    <action selector="CardButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bnp-5F-kBg"/>
+                                    <action selector="CardButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FAd-S7-YzC"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MdX-m7-Ucc">
@@ -32,7 +32,7 @@
                                 <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <connections>
-                                    <action selector="CardButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="84O-nN-Zih"/>
+                                    <action selector="CardButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LYF-cH-H4y"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SS0-0L-eya">
@@ -41,7 +41,7 @@
                                 <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <connections>
-                                    <action selector="CardButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="FHN-CF-bGL"/>
+                                    <action selector="CardButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lfm-85-2Mf"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6fP-7S-qNq">
@@ -50,7 +50,7 @@
                                 <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <connections>
-                                    <action selector="CardButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sQb-cd-kEr"/>
+                                    <action selector="CardButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eKW-0j-qWD"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2P7-1P-4c1">
@@ -59,7 +59,7 @@
                                 <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <connections>
-                                    <action selector="CardButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hzT-0Y-DcS"/>
+                                    <action selector="CardButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8nl-2y-a7I"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="69f-aQ-2eE">
@@ -68,7 +68,7 @@
                                 <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <connections>
-                                    <action selector="CardButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ah8-xn-FqE"/>
+                                    <action selector="CardButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Hdv-bx-kFs"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Flips:0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRk-Ho-7eu">
@@ -84,7 +84,7 @@
                                 <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <connections>
-                                    <action selector="CardButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pau-1f-nSV"/>
+                                    <action selector="CardButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="15o-0u-7Av"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxg-9c-zHb">
@@ -93,7 +93,7 @@
                                 <color key="backgroundColor" red="1" green="0.57637232540000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <connections>
-                                    <action selector="CardButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0NI-i5-hSu"/>
+                                    <action selector="CardButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wTi-Av-fx2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -102,14 +102,14 @@
                     </view>
                     <connections>
                         <outlet property="flipCountLabel" destination="LRk-Ho-7eu" id="1Lx-fC-cW7"/>
-                        <outletCollection property="buttonsCollection" destination="yl1-NV-k43" collectionClass="NSMutableArray" id="fDA-od-4hf"/>
-                        <outletCollection property="buttonsCollection" destination="MdX-m7-Ucc" collectionClass="NSMutableArray" id="rWt-Qz-oYX"/>
-                        <outletCollection property="buttonsCollection" destination="SS0-0L-eya" collectionClass="NSMutableArray" id="XSo-eQ-xcS"/>
-                        <outletCollection property="buttonsCollection" destination="6fP-7S-qNq" collectionClass="NSMutableArray" id="Pbw-jd-kPg"/>
-                        <outletCollection property="buttonsCollection" destination="2P7-1P-4c1" collectionClass="NSMutableArray" id="T8b-nb-8lf"/>
-                        <outletCollection property="buttonsCollection" destination="69f-aQ-2eE" collectionClass="NSMutableArray" id="Pqe-zy-dzy"/>
-                        <outletCollection property="buttonsCollection" destination="m96-Vo-3jv" collectionClass="NSMutableArray" id="0Qv-i3-jF0"/>
-                        <outletCollection property="buttonsCollection" destination="hxg-9c-zHb" collectionClass="NSMutableArray" id="iKZ-3u-2Xm"/>
+                        <outletCollection property="buttonsCollection" destination="yl1-NV-k43" collectionClass="NSMutableArray" id="tfp-AJ-xyn"/>
+                        <outletCollection property="buttonsCollection" destination="MdX-m7-Ucc" collectionClass="NSMutableArray" id="rrI-LH-6Wq"/>
+                        <outletCollection property="buttonsCollection" destination="SS0-0L-eya" collectionClass="NSMutableArray" id="gBO-XL-yC1"/>
+                        <outletCollection property="buttonsCollection" destination="6fP-7S-qNq" collectionClass="NSMutableArray" id="Tba-ET-g3J"/>
+                        <outletCollection property="buttonsCollection" destination="2P7-1P-4c1" collectionClass="NSMutableArray" id="k7t-12-lN6"/>
+                        <outletCollection property="buttonsCollection" destination="69f-aQ-2eE" collectionClass="NSMutableArray" id="Fd4-Cw-36y"/>
+                        <outletCollection property="buttonsCollection" destination="m96-Vo-3jv" collectionClass="NSMutableArray" id="AD5-Bk-QkS"/>
+                        <outletCollection property="buttonsCollection" destination="hxg-9c-zHb" collectionClass="NSMutableArray" id="SFF-q4-qTU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

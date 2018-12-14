@@ -12,11 +12,16 @@ struct Card {
     var isMatched = false
     var identifier:Int
     static var myFactoryIndentifier = 0
-    static func myUniqueIdentifier()->Int{
+    
+    
+    
+    static func myUniqueIdentifier() -> Int{
         myFactoryIndentifier += 1
         return myFactoryIndentifier
     }
-    init() {
+    
+    
+        init() {
         self.identifier = Card.myUniqueIdentifier()
     }
 }
