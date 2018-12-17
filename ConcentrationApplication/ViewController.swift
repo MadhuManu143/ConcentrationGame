@@ -15,7 +15,13 @@ class ViewController: UIViewController {
         }
     }
     @IBOutlet var buttonsCollection: [UIButton]!
-    lazy var game = Concentration(numberOfPairsOfCards: (buttonsCollection.count+1)/2   )
+    
+    lazy var game = Concentration(numberOfPairsOfCards: numberOfPairs )
+    var numberOfPairs : Int {
+        get {
+            return (buttonsCollection.count+1)/2
+        }
+    }
 
     
     @IBOutlet weak var flipCountLabel: UILabel!
