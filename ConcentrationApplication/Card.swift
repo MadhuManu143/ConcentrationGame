@@ -11,11 +11,11 @@ struct Card {
     var isFaceUp = false
     var isMatched = false
     var identifier:Int
-    static var myFactoryIndentifier = 0
+    private static var myFactoryIndentifier = 0
     
     
     
-    static func myUniqueIdentifier() -> Int{
+    private static func myUniqueIdentifier() -> Int{
         myFactoryIndentifier += 1
         return myFactoryIndentifier
     }

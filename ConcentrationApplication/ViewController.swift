@@ -9,29 +9,31 @@
 import UIKit
 
 class ViewController: UIViewController {
-    var flipCount = 0{
+    
+    private(set) var flipCount = 0{
         didSet{
             flipCountLabel.text = "Flips:\(flipCount)"
         }
     }
-    @IBOutlet var buttonsCollection: [UIButton]!
+    @IBOutlet private var buttonsCollection: [UIButton]!
     
-    lazy var game = Concentration(numberOfPairsOfCards: numberOfPairs )
-    var numberOfPairs : Int {
+    private lazy var game = Concentration(numberOfPairsOfCards: numberOfPairs )
+    
+    private var numberOfPairs : Int {
         get {
             return (buttonsCollection.count+1)/2
         }
     }
 
     
-    @IBOutlet weak var flipCountLabel: UILabel!
+    @IBOutlet private weak var flipCountLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
-    @IBAction func CardButtonClicked(_ sender: UIButton) {
+    @IBAction private func CardButtonClicked(_ sender: UIButton) {
         flipCount += 1
         if let cardNumber = buttonsCollection.index(of:sender) {
             game.chooseACard(at: cardNumber)
@@ -40,7 +42,7 @@ class ViewController: UIViewController {
             print("Card button is not ib the array")
         }
     }
-    func updateViewFromModel() {
+    private func updateViewFromModel() {
         for index in buttonsCollection.indices {
             let card = game.cards[index]
             let button = buttonsCollection[index]
@@ -53,9 +55,9 @@ class ViewController: UIViewController {
             }
         }
     }
-    var emojiAry = ["🐶","👻","🤡","👹","🐶","👻","🤡","👹"]
-    var emojiDictionary = [Int:String]()
-    func emoji(for card : Card)-> String {
+    private var emojiAry = ["🐶","👻","🤡","👹","🐶","👻","🤡","👹"]
+    private var emojiDictionary = [Int:String]()
+    private func emoji(for card : Card)-> String {
         if emojiDictionary[card.identifier] == nil, emojiAry.count > 0 {
             let randomIndex = Int(arc4random_uniform(UInt32(emojiAry.count)))
             emojiDictionary[card.identifier] = emojiAry.remove(at: randomIndex)
