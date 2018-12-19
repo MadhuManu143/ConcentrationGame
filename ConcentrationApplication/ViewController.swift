@@ -56,13 +56,13 @@ class ViewController: UIViewController {
         }
     }
     private var emojiAry = ["🐶","👻","🤡","👹","🐶","👻","🤡","👹"]
-    private var emojiDictionary = [Int:String]()
+    private var emojiDictionary = [Card:String]()
     private func emoji(for card : Card)-> String {
-        if emojiDictionary[card.identifier] == nil, emojiAry.count > 0 {
-            emojiDictionary[card.identifier] = emojiAry.remove(at: emojiAry.count.arc4random)
+        if emojiDictionary[card] == nil, emojiAry.count > 0 {
+            emojiDictionary[card] = emojiAry.remove(at: emojiAry.count.arc4random)
         }
         
-        return emojiDictionary[card.identifier] ?? "?"
+        return emojiDictionary[card] ?? "?"
     }
     
 }
