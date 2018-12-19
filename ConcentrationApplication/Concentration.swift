@@ -7,7 +7,7 @@
 //
 
 import Foundation
-class Concentration {
+struct Concentration {
     private(set) var cards = [Card]()
     private var oneAndOnlyFaceUpCard : Int? {
         get {
@@ -31,7 +31,7 @@ class Concentration {
     }
     
 
-    func chooseACard(at index : Int) {
+    mutating func chooseACard(at index : Int) {
         if !cards[index].isMatched {
             if let matchIndex = oneAndOnlyFaceUpCard, matchIndex != index {
                 if cards[matchIndex] == cards[index]{
