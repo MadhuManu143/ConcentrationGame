@@ -61,7 +61,6 @@ class ViewController: UIViewController {
         if emojiDictionary[card] == nil, emojiAry.count > 0 {
             emojiDictionary[card] = emojiAry.remove(at: emojiAry.count.arc4random)
         }
-        
         return emojiDictionary[card] ?? "?"
     }
     

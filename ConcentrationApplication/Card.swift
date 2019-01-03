@@ -7,7 +7,7 @@
 //
 
 import Foundation
-struct Card : Hashable,Equatable {
+struct Card : Hashable {
     
     var hashValue : Int {
         return identifier
