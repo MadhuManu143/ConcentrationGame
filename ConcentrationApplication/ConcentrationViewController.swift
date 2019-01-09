@@ -8,13 +8,14 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ConcentrationViewController: UIViewController {
     
     private(set) var flipCount = 0{
         didSet{
             flipCountLabel.text = "Flips:\(flipCount)"
         }
     }
+    
     @IBOutlet private var buttonsCollection: [UIButton]!
     
     private lazy var game = Concentration(numberOfPairsOfCards: numberOfPairs )
@@ -43,16 +44,26 @@ class ViewController: UIViewController {
         }
     }
     private func updateViewFromModel() {
-        for index in buttonsCollection.indices {
-            let card = game.cards[index]
-            let button = buttonsCollection[index]
-            if card.isFaceUp {
-                button.setTitle(emoji(for: card ), for: .normal)
-                button.backgroundColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-            }else{
-                button.setTitle(" ", for: .normal)
-                button.backgroundColor = card.isMatched ? #colorLiteral(red: 1, green: 0.5763723254, blue: 0, alpha: 0) : #colorLiteral(red: 1, green: 0.5763723254, blue: 0, alpha: 1)
+        if buttonsCollection != nil {
+            for index in buttonsCollection.indices {
+                let card = game.cards[index]
+                let button = buttonsCollection[index]
+                if card.isFaceUp {
+                    button.setTitle(emoji(for: card ), for: .normal)
+                    button.backgroundColor = #colorLiteral(red: 0.8039215803, green: 0.8039215803, blue: 0.8039215803, alpha: 1)
+                }else{
+                    button.setTitle(" ", for: .normal)
+                    button.backgroundColor = card.isMatched ? #colorLiteral(red: 1, green: 0.5763723254, blue: 0, alpha: 0) : #colorLiteral(red: 0.01680417731, green: 0.1983509958, blue: 1, alpha: 1)
+                }
             }
+        }
+        
+    }
+    var theame : [String]? {
+        didSet {
+            emojiAry = theame ?? []
+            emojiDictionary = [:]
+            updateViewFromModel()
         }
     }
     private var emojiAry = ["🐶","👻","🤡","👹","🐶","👻","🤡","👹"]
