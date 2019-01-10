@@ -108,13 +108,13 @@
 				FAE6804521BCF86400AF217D /* AppDelegate.swift */,
 				FAEE14E321E6908C0000C27F /* ConcentrationThemeChangerViewController.swift */,
 				FAE6804721BCF86400AF217D /* ConcentrationViewController.swift */,
+				FA5505BD21BDF57300556CD3 /* Concentration.swift */,
+				FA5505BF21BDF62C00556CD3 /* Card.swift */,
 				FAE6804921BCF86400AF217D /* Main.storyboard */,
 				FAE6804F21BCF86600AF217D /* Assets.xcassets */,
 				FAE6805121BCF86600AF217D /* LaunchScreen.storyboard */,
 				FAE6805421BCF86600AF217D /* Info.plist */,
 				FAE6804C21BCF86400AF217D /* ConcentrationApplication.xcdatamodeld */,
-				FA5505BD21BDF57300556CD3 /* Concentration.swift */,
-				FA5505BF21BDF62C00556CD3 /* Card.swift */,
 			);
 			path = ConcentrationApplication;
 			sourceTree = "<group>";

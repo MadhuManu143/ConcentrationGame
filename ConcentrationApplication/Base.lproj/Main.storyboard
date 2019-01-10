@@ -26,7 +26,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="Sports"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="showDetail" identifier="Theme Changer" id="7ma-Kv-CQy"/>
+                                            <action selector="changeTheme:" destination="ab4-Jz-p2y" eventType="touchUpInside" id="Tgj-zd-KV9"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efq-Nd-faZ">
@@ -34,7 +34,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="Animals"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="showDetail" identifier="Theme Changer" id="J89-7Y-zqH"/>
+                                            <action selector="changeTheme:" destination="ab4-Jz-p2y" eventType="touchUpInside" id="pZG-i3-nPB"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fe7-V6-onC">
@@ -42,7 +42,7 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <state key="normal" title="Faces"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="showDetail" identifier="Theme Changer" id="lqD-cY-VNh"/>
+                                            <action selector="changeTheme:" destination="ab4-Jz-p2y" eventType="touchUpInside" id="Ufo-MR-jkg"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -56,6 +56,9 @@
                         <viewLayoutGuide key="safeArea" id="BqA-6g-ynZ"/>
                     </view>
                     <navigationItem key="navigationItem" id="I7E-mi-6o2"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="showDetail" identifier="Theme Changer" id="ajD-tw-WiZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Swk-ms-Bsp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -261,6 +264,6 @@
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="lqD-cY-VNh"/>
+        <segue reference="ajD-tw-WiZ"/>
     </inferredMetricsTieBreakers>
 </document>
